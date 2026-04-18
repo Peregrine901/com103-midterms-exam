@@ -82,3 +82,15 @@ while count < 4:
         else:
             print("Error, invalid option.")
 
+# Report
+print("\n=== Weekly Expense Report ===")
+j = 0
+while j < len(entries):
+    print(entries[j])
+    j = j + 1
+
+print("\nTotal Spent:", total)
+if total >= budget * 0.25:
+    print("High Expense!")
+else:
+    print("Expenses within budget. Goodwork!")
